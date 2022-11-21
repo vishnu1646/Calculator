@@ -42,6 +42,14 @@ import java.util.Scanner;
                         System.out.println("Adition of two numbers is :" + c);
                         break;
 
+                    case 4:
+                        System.out.println("Enter the first number");
+                        a = sc.nextInt();
+                        System.out.println("Enter the second number");
+                        b = sc.nextInt();
+                        c = a / b;
+                        System.out.println("Division of two numbers is :" + c);
+                        break;
                 }
         }
     }
