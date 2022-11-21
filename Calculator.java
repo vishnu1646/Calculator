@@ -23,7 +23,17 @@ import java.util.Scanner;
                         c = a + b;
                         System.out.println("Adition of two numbers is :" + c);
                         break;
-            }
+
+                    case 2:
+                        System.out.println("Enter the first number");
+                        a = sc.nextInt();
+                        System.out.println("Enter the second number");
+                        b = sc.nextInt();
+                        c = a - b;
+                        System.out.println("Substraction  of two numbers is :" + c);
+                        break;
+
+                }
         }
     }
 
