@@ -14,6 +14,15 @@ import java.util.Scanner;
                 System.out.println("make your choice");
                 choice = sc.nextInt();
 
+                switch (choice) {
+                    case 1:
+                        System.out.println("Enter the first number");
+                        a = sc.nextInt();
+                        System.out.println("Enter the second number");
+                        b = sc.nextInt();
+                        c = a + b;
+                        System.out.println("Adition of two numbers is :" + c);
+                        break;
             }
         }
     }
