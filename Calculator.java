@@ -3,10 +3,10 @@ import java.util.Scanner;
 
     public class Calculator {
         public static void main(String[] args) {
-            int a,b,c;
+            int a, b, c;
             int choice;
             Scanner sc = new Scanner(System.in);
-            while(true) {
+            while (true) {
                 System.out.println("press 1 for addition");
                 System.out.println("press 2 for addition");
                 System.out.println("press 3 for multiplication");
@@ -39,7 +39,7 @@ import java.util.Scanner;
                         System.out.println("Enter the second number");
                         b = sc.nextInt();
                         c = a * b;
-                        System.out.println("Adition of two numbers is :" + c);
+                        System.out.println("Multiplication of two numbers is :" + c);
                         break;
 
                     case 4:
@@ -47,10 +47,16 @@ import java.util.Scanner;
                         a = sc.nextInt();
                         System.out.println("Enter the second number");
                         b = sc.nextInt();
-                        c = a / b;
-                        System.out.println("Division of two numbers is :" + c);
-                        break;
+                        try {
+                            c = a/b;
+                            System.out.println(c);
+                        }
+                        catch (Exception e){
+                            System.out.println(e.getMessage());
+                        }
+
                 }
+            }
         }
     }
 
